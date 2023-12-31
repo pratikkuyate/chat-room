@@ -1,0 +1,189 @@
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #dedede;
+}
+
+.chat-messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  background-color: #dedede;
+  padding: 15px;
+
+}
+
+.message-name {
+  display: flex;
+}
+
+.chat-messages-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  background-color: #dedede;
+  padding: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  max-width: 80%;
+  margin-bottom: 10px;
+  max-width: 40%;
+}
+
+.message.sent {
+  margin-left: auto;
+  flex-direction: row-reverse;
+}
+
+.message.received {
+  margin-right: auto;
+}
+
+.message-text {
+  font-size: 16px;
+  word-wrap: break-word;
+}
+
+.message-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.message-photo.sent {
+  margin-left: 10px;
+}
+
+.message-photo.received {
+  margin-right: 10px;
+}
+
+.message-content {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.message-content.received {
+  background-color: #eee;
+  color: #000;
+}
+
+.message-content.sent {
+  background: #007bff;
+  color: #fff;
+}
+
+.chat-form {
+  display: flex;
+  align-items: center;
+  background-color: #fafafa;
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+
+.chat-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.chat-send-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.welcome-message {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.send-icon {
+  font-size: 10px;
+}
+
+.sign-out-button-container {
+  padding: 15px;
+}
+
+.sign-out-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.message-name {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.sign-in-container {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #4158D0, #C850C0, #FFCC70);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.welcome-message {
+  color: #fff;
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.sign-in-button {
+  background-color: #fff;
+  color: #333;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.sign-in-button:hover {
+  background-color: #f5f5f5;
+}
+
+.sign-in-button img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  /* Adjust spacing as needed */
+  height: 20px;
+  /* Adjust logo size as needed */
+}
